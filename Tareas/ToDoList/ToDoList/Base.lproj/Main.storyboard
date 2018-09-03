@@ -49,7 +49,7 @@
         <!--New ToDo-->
         <scene sceneID="uMT-dT-Uyd">
             <objects>
-                <tableViewController id="FmV-Gk-jTy" sceneMemberID="viewController">
+                <tableViewController id="FmV-Gk-jTy" customClass="ToDoViewController" customModule="ToDoList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cUf-5f-xGC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,12 +68,19 @@
                                                     <rect key="frame" x="16" y="0.0" width="44" height="44"/>
                                                     <state key="normal" image="Unchecked"/>
                                                     <state key="selected" image="Checked"/>
+                                                    <connections>
+                                                        <action selector="isCompleteButtonTapped:" destination="FmV-Gk-jTy" eventType="touchUpInside" id="nTd-jj-Ogc"/>
+                                                    </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Remind me too..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFG-eC-YpL">
                                                     <rect key="frame" x="68" y="7" width="291" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="returnPressed:" destination="FmV-Gk-jTy" eventType="primaryActionTriggered" id="hYQ-k6-VYb"/>
+                                                        <action selector="textEditingChanged:" destination="FmV-Gk-jTy" eventType="editingChanged" id="Bn7-3x-1rE"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -112,6 +119,9 @@
                                                     <date key="date" timeIntervalSinceReferenceDate="557558168.17248201">
                                                         <!--2018-09-02 05:16:08 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="datePickerChanged:" destination="FmV-Gk-jTy" eventType="primaryActionTriggered" id="b16-f9-89J"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -182,11 +192,19 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dueDateLabel" destination="PAQ-HG-c1w" id="dlT-Fe-asT"/>
+                        <outlet property="dueDatePickerView" destination="HMc-ax-O6a" id="hUY-2K-NQT"/>
+                        <outlet property="isCompleteButton" destination="7yG-2x-reo" id="QmF-uL-pWw"/>
+                        <outlet property="notesTextView" destination="jYT-0H-oD3" id="yvI-HA-svX"/>
+                        <outlet property="saveButton" destination="c0Q-yb-gJ8" id="kLU-TN-3CK"/>
+                        <outlet property="titleTextField" destination="ZFG-eC-YpL" id="B9B-Sr-QBR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Elq-GP-Vka" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KNO-aj-z4J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2501" y="435"/>
+            <point key="canvasLocation" x="2308" y="430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ru8-uk-JEF">
@@ -218,7 +236,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3k-w1-Yuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325" y="431"/>
+            <point key="canvasLocation" x="-175" y="430"/>
         </scene>
     </scenes>
     <resources>

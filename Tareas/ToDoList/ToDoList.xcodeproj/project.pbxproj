@@ -13,6 +13,7 @@
 		E3058DC02139FB4E00708479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3058DBE2139FB4E00708479 /* LaunchScreen.storyboard */; };
 		E3058DC82139FD2100708479 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3058DC72139FD2100708479 /* ToDo.swift */; };
 		E3058DCA2139FDDF00708479 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3058DC92139FDDF00708479 /* ToDoTableViewController.swift */; };
+		E34AFB46213CCB1400CAF375 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFB45213CCB1400CAF375 /* ToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E3058DC12139FB4E00708479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3058DC72139FD2100708479 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		E3058DC92139FDDF00708479 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		E34AFB45213CCB1400CAF375 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				E3058DB92139FB4E00708479 /* Main.storyboard */,
 				E3058DC72139FD2100708479 /* ToDo.swift */,
 				E3058DC92139FDDF00708479 /* ToDoTableViewController.swift */,
+				E34AFB45213CCB1400CAF375 /* ToDoViewController.swift */,
 				E3058DBC2139FB4E00708479 /* Assets.xcassets */,
 				E3058DBE2139FB4E00708479 /* LaunchScreen.storyboard */,
 				E3058DC12139FB4E00708479 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34AFB46213CCB1400CAF375 /* ToDoViewController.swift in Sources */,
 				E3058DB62139FB4E00708479 /* AppDelegate.swift in Sources */,
 				E3058DCA2139FDDF00708479 /* ToDoTableViewController.swift in Sources */,
 				E3058DC82139FD2100708479 /* ToDo.swift in Sources */,
