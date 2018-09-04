@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     var status: GameState = .start
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var paperChoice: UIButton!
     @IBOutlet weak var scissorsChoice: UIButton!
     @IBOutlet weak var playAgain: UIButton!
+    var audioPlayer: AVAudioPlayer?
     
     @IBAction func rockAction(_ sender: UIButton) {
         play(.rock)
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
     func updateUI(_ gameState: GameState) {
         gameStatus.text = gameState.status
         gameEmoji.text = gameState.emoji
-        
+    
         if gameState == .start {
             view.backgroundColor = UIColor.brown
             playAgain.isHidden = true
@@ -48,19 +50,28 @@ class ViewController: UIViewController {
             rockChoice.isEnabled = true
             paperChoice.isEnabled = true
             scissorsChoice.isEnabled = true
+            appSign.text = ""
         }
         else if gameState == .win {
             view.backgroundColor = UIColor.green
-            
         }
         else if gameState == .lose {
             view.backgroundColor = UIColor.red
-        
         }
         else {
             view.backgroundColor = UIColor.yellow
         }
-
+        
+        let path = Bundle.main.path(forResource: gameState.sound, ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Error al cargar el archivo de sonido")
+        }
+        
     }
     
     func play(_ playerChoice: Sign) {

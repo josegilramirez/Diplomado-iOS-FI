@@ -16,7 +16,7 @@ enum Sign {
         case .rock: return "👊🏽"
         case .paper: return "✋🏽"
         case .scissors: return "✌🏽"
-        }
+        }    
     }
     
     func compare(_ otherSign: Sign) -> GameState {

@@ -26,4 +26,12 @@ enum GameState {
         case .draw: return "🐵"
         }
     }
+    var sound: String {
+        switch self {
+        case .start: return "play.caf"
+        case .win: return "win.caf"
+        case .lose: return "lose.caf"
+        case .draw: return "draw.caf"
+        }
+    }
 }
