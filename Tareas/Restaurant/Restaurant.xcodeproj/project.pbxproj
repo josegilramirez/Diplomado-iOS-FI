@@ -16,6 +16,9 @@
 		E33F96262140EC1B0040E65B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F96252140EC1B0040E65B /* MenuTableViewController.swift */; };
 		E33F96282140EC330040E65B /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F96272140EC330040E65B /* OrderTableViewController.swift */; };
 		E33F962A2140EDF80040E65B /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F96292140EDF80040E65B /* MenuItemDetailViewController.swift */; };
+		E33F962C21416D7D0040E65B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F962B21416D7D0040E65B /* MenuItem.swift */; };
+		E33F962E214171E10040E65B /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F962D214171E10040E65B /* IntermediaryModels.swift */; };
+		E33F9630214174070040E65B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F962F214174070040E65B /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		E33F96252140EC1B0040E65B /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		E33F96272140EC330040E65B /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		E33F96292140EDF80040E65B /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		E33F962B21416D7D0040E65B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		E33F962D214171E10040E65B /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
+		E33F962F214174070040E65B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				E33F96112140E8C90040E65B /* AppDelegate.swift */,
 				E33F96132140E8C90040E65B /* ViewController.swift */,
 				E33F96152140E8C90040E65B /* Main.storyboard */,
+				E33F962B21416D7D0040E65B /* MenuItem.swift */,
+				E33F962D214171E10040E65B /* IntermediaryModels.swift */,
+				E33F962F214174070040E65B /* MenuController.swift */,
 				E33F96292140EDF80040E65B /* MenuItemDetailViewController.swift */,
 				E33F96232140EBEF0040E65B /* CategoryTableViewController.swift */,
 				E33F96252140EC1B0040E65B /* MenuTableViewController.swift */,
@@ -147,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33F962C21416D7D0040E65B /* MenuItem.swift in Sources */,
+				E33F9630214174070040E65B /* MenuController.swift in Sources */,
 				E33F96262140EC1B0040E65B /* MenuTableViewController.swift in Sources */,
 				E33F962A2140EDF80040E65B /* MenuItemDetailViewController.swift in Sources */,
 				E33F96282140EC330040E65B /* OrderTableViewController.swift in Sources */,
+				E33F962E214171E10040E65B /* IntermediaryModels.swift in Sources */,
 				E33F96142140E8C90040E65B /* ViewController.swift in Sources */,
 				E33F96122140E8C90040E65B /* AppDelegate.swift in Sources */,
 				E33F96242140EBEF0040E65B /* CategoryTableViewController.swift in Sources */,
