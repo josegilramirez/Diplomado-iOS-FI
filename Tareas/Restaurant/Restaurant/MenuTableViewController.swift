@@ -11,13 +11,12 @@ import UIKit
 class MenuTableViewController: UITableViewController {
     
     var category: String!
-    let menuController = MenuController()
     var menuItems = [MenuItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = category.capitalized
-        menuController.fetchMenuItems(categoryName: category) { (menuItems) in
+        MenuController.shared.fetchMenuItems(categoryName: category) { (menuItems) in
             if let menuItems = menuItems {
                 self.updateUI(with: menuItems)
             }
@@ -25,8 +24,10 @@ class MenuTableViewController: UITableViewController {
     }
     
     func updateUI(with menuItems: [MenuItem]) {
-        self.menuItems = menuItems
-        self.tableView.reloadData()
+        DispatchQueue.main.async {
+            self.menuItems = menuItems
+            self.tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,14 +94,16 @@ class MenuTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "MenuDetailSegue" {
+            let menuItemDetailViewController = segue.destination as! MenuItemDetailViewController
+            let index = tableView.indexPathForSelectedRow!.row
+            menuItemDetailViewController.menuItem = menuItems[index]
+        }
     }
-    */
+
 
 }

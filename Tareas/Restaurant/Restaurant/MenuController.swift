@@ -72,6 +72,8 @@ class MenuController {
         }
         task.resume()
     }
+    
+    static let shared = MenuController()
 }
 
 
