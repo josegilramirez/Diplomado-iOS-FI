@@ -18,3 +18,8 @@ struct PreparationTime: Codable {
         case preparationTime = "preparation_time"
     }
 }
+
+
+protocol AddToOrderDelegate {
+    func added(menuItem: MenuItem)
+}

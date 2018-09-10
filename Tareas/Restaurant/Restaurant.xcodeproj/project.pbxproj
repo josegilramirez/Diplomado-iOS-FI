@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3239486214332D200CEA05E /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3239485214332D200CEA05E /* OrderConfirmationViewController.swift */; };
 		E33F96122140E8C90040E65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F96112140E8C90040E65B /* AppDelegate.swift */; };
 		E33F96142140E8C90040E65B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F96132140E8C90040E65B /* ViewController.swift */; };
 		E33F96172140E8C90040E65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33F96152140E8C90040E65B /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3239485214332D200CEA05E /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		E33F960E2140E8C90040E65B /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33F96112140E8C90040E65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33F96132140E8C90040E65B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				E33F96232140EBEF0040E65B /* CategoryTableViewController.swift */,
 				E33F96252140EC1B0040E65B /* MenuTableViewController.swift */,
 				E33F96272140EC330040E65B /* OrderTableViewController.swift */,
+				E3239485214332D200CEA05E /* OrderConfirmationViewController.swift */,
 				E33F96182140E8CB0040E65B /* Assets.xcassets */,
 				E33F961A2140E8CB0040E65B /* LaunchScreen.storyboard */,
 				E33F961D2140E8CB0040E65B /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3239486214332D200CEA05E /* OrderConfirmationViewController.swift in Sources */,
 				E33F962C21416D7D0040E65B /* MenuItem.swift in Sources */,
 				E33F9630214174070040E65B /* MenuController.swift in Sources */,
 				E33F96262140EC1B0040E65B /* MenuTableViewController.swift in Sources */,
