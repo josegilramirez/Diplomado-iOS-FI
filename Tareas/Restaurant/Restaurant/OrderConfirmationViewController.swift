@@ -15,7 +15,8 @@ class OrderConfirmationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeRemainingLabel.text = "Thank you for your order! Your wait time is approximately \(minutes!) minutes."
+        let s = minutes! == 1 ? "" : "s"
+        timeRemainingLabel.text = "Thank you for your order! Your wait time is approximately \(minutes!) minute\(s)."
     }
     
     override func didReceiveMemoryWarning() {

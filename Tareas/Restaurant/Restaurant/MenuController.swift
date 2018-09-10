@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MenuController {
     let baseURL = URL(string: "http://localhost:8090/")!
@@ -65,6 +66,18 @@ class MenuController {
             if let data = data,
                 let preparationTime = try? jsonDecoder.decode(PreparationTime.self, from: data) {
                 completion(preparationTime.preparationTime)
+            }
+            else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
+    
+    func fetchImage(url: URL, completion: @escaping (UIImage?) -> Void) {
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let data = data, let image = UIImage(data: data) {
+                completion(image)
             }
             else {
                 completion(nil)

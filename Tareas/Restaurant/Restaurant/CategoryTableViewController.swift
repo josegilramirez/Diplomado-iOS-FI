@@ -56,7 +56,7 @@ class CategoryTableViewController: UITableViewController {
         cell.textLabel?.text = categoryString.capitalized
     }
     
-    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
