@@ -30,5 +30,26 @@ class LabTunesUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testAppLogin() {
+        let app = XCUIApplication()
+        let nameTextField = app.textFields["userName"]
+        nameTextField.tap()
+        nameTextField.typeText("iOSLab")
+        
+        let passwordTextField = app.secureTextFields["password"]
+        passwordTextField.tap()
+        passwordTextField.typeText("password")
+        
+        let loginButton = app.buttons["loginButton"]
+        loginButton.tap()
+        XCTAssertTrue(app.isDisplayingMusic)
+    }
 
+}
+
+extension XCUIApplication {
+    var isDisplayingMusic: Bool {
+        return otherElements["musicView"].exists
+    }
 }

@@ -21,6 +21,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-b9-9Zy">
                                 <rect key="frame" x="91" y="139" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="userName"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
@@ -28,6 +29,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFN-rt-GcM">
                                 <rect key="frame" x="91" y="206" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="password"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
@@ -35,6 +37,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7M-OM-fD8">
                                 <rect key="frame" x="163" y="318" width="49" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginButton"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -47,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gze-Qa-kAm"/>
                     <connections>
+                        <outlet property="loginButton" destination="h7M-OM-fD8" id="nMM-I2-bDA"/>
                         <outlet property="passwordTextField" destination="hFN-rt-GcM" id="XH6-fR-jEg"/>
                         <outlet property="userNameTextField" destination="MQ9-b9-9Zy" id="P6h-s9-x75"/>
                         <segue destination="a9V-Oq-Gg3" kind="show" identifier="LoginSuccess" id="FDi-zH-Doh"/>
@@ -83,6 +87,9 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="musicView">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="OGI-Tq-epW" firstAttribute="bottom" secondItem="RB9-Hk-7Un" secondAttribute="bottom" id="bh0-Zx-JoF"/>
                             <constraint firstItem="OGI-Tq-epW" firstAttribute="top" secondItem="RB9-Hk-7Un" secondAttribute="top" id="dhG-RI-t5x"/>
