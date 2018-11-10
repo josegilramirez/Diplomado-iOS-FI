@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var counterView: CounterView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +22,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func addCounter(_ sender: ActionButton) {
+        counterView.counter = counterView.counter + 1
+    }
+    
+    @IBAction func substractCounter(_ sender: ActionButton) {
+        counterView.counter = counterView.counter - 1
+    }
 }
 

@@ -12,6 +12,8 @@
 		E3046AB621724CB0007700F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3046AB421724CB0007700F8 /* Main.storyboard */; };
 		E3046AB821724CB1007700F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3046AB721724CB1007700F8 /* Assets.xcassets */; };
 		E3046ABB21724CB1007700F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3046AB921724CB1007700F8 /* LaunchScreen.storyboard */; };
+		E3046AC321724D59007700F8 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3046AC221724D59007700F8 /* ActionButton.swift */; };
+		E307FB4A21726A590013E273 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307FB4921726A590013E273 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E3046AB721724CB1007700F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3046ABA21724CB1007700F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3046ABC21724CB1007700F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3046AC221724D59007700F8 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		E307FB4921726A590013E273 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E3046AB721724CB1007700F8 /* Assets.xcassets */,
 				E3046AB921724CB1007700F8 /* LaunchScreen.storyboard */,
 				E3046ABC21724CB1007700F8 /* Info.plist */,
+				E3046AC221724D59007700F8 /* ActionButton.swift */,
+				E307FB4921726A590013E273 /* CounterView.swift */,
 			);
 			path = WaterControl;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				E3046AB321724CB0007700F8 /* ViewController.swift in Sources */,
 				E3046AB121724CB0007700F8 /* AppDelegate.swift in Sources */,
+				E3046AC321724D59007700F8 /* ActionButton.swift in Sources */,
+				E307FB4A21726A590013E273 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
