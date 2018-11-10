@@ -19,6 +19,7 @@
 		E3D458AF219658480035BFF3 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D458AE219658480035BFF3 /* Music.swift */; };
 		E3D458B1219658610035BFF3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D458B0219658610035BFF3 /* Song.swift */; };
 		E3D458B321966BAB0035BFF3 /* LabTunesNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D458B221966BAB0035BFF3 /* LabTunesNetworkTests.swift */; };
+		E3D458B6219730610035BFF3 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D458B5219730610035BFF3 /* MusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E3D458AE219658480035BFF3 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		E3D458B0219658610035BFF3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		E3D458B221966BAB0035BFF3 /* LabTunesNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTunesNetworkTests.swift; sourceTree = "<group>"; };
+		E3D458B5219730610035BFF3 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,9 @@
 		E3D4587A2196578F0035BFF3 /* LabTunes */ = {
 			isa = PBXGroup;
 			children = (
+				E3D458B42197300A0035BFF3 /* Controllers */,
 				E3D458A9219658090035BFF3 /* Models */,
 				E3D4587B2196578F0035BFF3 /* AppDelegate.swift */,
-				E3D4587D2196578F0035BFF3 /* ViewController.swift */,
 				E3D4587F2196578F0035BFF3 /* Main.storyboard */,
 				E3D45882219657910035BFF3 /* Assets.xcassets */,
 				E3D45884219657910035BFF3 /* LaunchScreen.storyboard */,
@@ -146,6 +148,15 @@
 				E3D458B0219658610035BFF3 /* Song.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E3D458B42197300A0035BFF3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3D458B5219730610035BFF3 /* MusicViewController.swift */,
+				E3D4587D2196578F0035BFF3 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D458B1219658610035BFF3 /* Song.swift in Sources */,
+				E3D458B6219730610035BFF3 /* MusicViewController.swift in Sources */,
 				E3D458AD219658380035BFF3 /* Session.swift in Sources */,
 				E3D4587E2196578F0035BFF3 /* ViewController.swift in Sources */,
 				E3D458AF219658480035BFF3 /* Music.swift in Sources */,
