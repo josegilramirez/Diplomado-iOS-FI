@@ -14,7 +14,7 @@ class MusicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        downloadSongs()
         // Do any additional setup after loading the view.
     }
     
